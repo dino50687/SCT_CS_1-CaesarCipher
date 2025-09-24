@@ -1,41 +1,46 @@
-# SCT_CS_1-CaesarCipher
-project overview: Create a program that can encrypt and decrypt text using the Caesar Cipher algorithm. Allow users to input a message and a shift value to perform encryption and decryption.
+````markdown
 # Caesar Cipher – Classic Encryption Tool
 
-  SkillCraft Cybersecurity Internship – Task 1    
-  Author:   cherupalli mani karthik 
-  Domain:   Cybersecurity
+> **SkillCraft Cybersecurity Internship – Task 1**  
+> **Author:** Cherupalli Mani Karthik  
+> **Domain:** Cybersecurity
 
 ---
 
-## Project Overview
+## 🚀 Project Overview
 
-This is a Python-based Caesar Cipher tool developed as part of my internship at SkillCraft Technology. It demonstrates classical encryption, brute-force decryption, and the fundamentals of cryptography using clean, readable code.
-
-  Features:  
-
-- Encrypt a message using a key  
-- Decrypt a message with a known key  
-- Crack a message using brute-force when the key is unknown
+Welcome to the **Caesar Cipher Tool**!  
+This Python-based command-line utility enables you to **encrypt**, **decrypt**, and **crack** messages using the classical Caesar Cipher algorithm—a foundational concept in cryptography. Developed as part of my internship at SkillCraft Technology, this project demonstrates classical encryption principles, ethical brute-force decryption, and the importance of secure key management.
 
 ---
 
-## Learning Outcomes
+## ✨ Features
 
-- Understood classical substitution cipher mechanisms  
+- 🔒 **Encrypt messages** with a user-defined key  
+- 🔓 **Decrypt messages** using a known key  
+- 🕵️‍♂️ **Brute-force decryption** when the key is unknown  
+- 🖥️ Simple and intuitive **command-line interface**  
+- ✅ Handles only **uppercase English letters (A–Z)**; spaces and symbols remain unchanged
+
+---
+
+## 🎯 Learning Outcomes
+
+- Gained practical knowledge of classical substitution ciphers  
 - Implemented encryption and decryption logic in Python  
-- Practiced ethical brute-force decryption  
-- Improved code structure and user interaction in CLI-based tools
+- Practiced ethical brute-force decryption techniques  
+- Enhanced skills in code structure and user-friendly CLI design
 
 ---
 
-## Sample Run
+## 🛠️ Usage Examples
 
-### Encrypt a Message
+### 1. Encrypt a Message
+
 ```bash
 python main.py encrypt --text "HELLO WORLD" --key 3
 ```
-  Output:  
+**Output:**
 ```
 Original Text : HELLO WORLD  
 Encrypted Text: KHOOR ZRUOG
@@ -43,11 +48,12 @@ Encrypted Text: KHOOR ZRUOG
 
 ---
 
-### Decrypt with Known Key
+### 2. Decrypt with a Known Key
+
 ```bash
 python main.py decrypt --text "KHOOR ZRUOG" --key 3
 ```
-  Output:  
+**Output:**
 ```
 Encrypted Text: KHOOR ZRUOG  
 Decrypted Text: HELLO WORLD
@@ -55,11 +61,12 @@ Decrypted Text: HELLO WORLD
 
 ---
 
-### Brute-force Decryption (Unknown Key)
+### 3. Brute-force Decryption (Unknown Key)
+
 ```bash
 python main.py brute --text "KHOOR ZRUOG"
 ```
-  Output:  
+**Output:**
 ```
 Trying all possible keys...  
 Key 1: JGNNQ YQTNF  
@@ -73,8 +80,21 @@ Key 25: IDMMN XPTME
 
 ---
 
-## Notes
+## ⚠️ Notes
 
-- Works with   uppercase English letters (A–Z)   only  
-- Spaces and symbols remain unchanged  
-- Key must be between 1 and 25 (due to 26-letter rotation logic)
+- **Only uppercase English letters (A–Z) are encrypted**—spaces and symbols remain unchanged  
+- **Key must be between 1 and 25** (due to the 26-letter English alphabet rotation)
+- The tool is intended for educational and ethical use only
+
+---
+
+## 📚 About the Caesar Cipher
+
+The Caesar Cipher is one of the simplest and most widely known encryption techniques. It’s a type of substitution cipher in which each letter in the plaintext is shifted a certain number of places down the alphabet. While not suitable for modern security, it's a great way to learn the basics of cryptography!
+
+---
+
+> **Explore. Encrypt. Educate.**  
+> *Thank you for checking out this project!*
+
+````
